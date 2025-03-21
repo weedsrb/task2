@@ -11,13 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateParallax() {
       const scrollY = window.pageYOffset;
       
-      // Extended parallax effect for background layers with higher multipliers
       document.querySelector('.layer1').style.transform = `translateY(${scrollY * 0.3}px)`;
       document.querySelector('.layer2').style.transform = `translateY(${scrollY * 0.5}px)`;
       document.querySelector('.layer3').style.transform = `translateY(${scrollY * 0.7}px)`;
       document.querySelector('.layer4').style.transform = `translateY(${scrollY * 0.9}px)`;
       
-      // Decorative circles in the content section with varied multipliers for a dynamic look
       document.querySelector('.shape1').style.transform = `translateY(${scrollY * 0.6}px)`;
       document.querySelector('.shape2').style.transform = `translateY(${scrollY * 0.4}px)`;
       document.querySelector('.shape3').style.transform = `translateY(${scrollY * 0.8}px)`;
